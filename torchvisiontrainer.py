@@ -1,7 +1,6 @@
 import torch
 import torchvision
 import os
-from torchvision.models.detection.ssdlite import SSDLiteHead
 from torch.utils.data import DataLoader
 from torchvision.models.detection import ssdlite320_mobilenet_v3_large # chnge this based on your model
 from torchvision.transforms import functional as F
@@ -101,3 +100,4 @@ if __name__ == "__main__":
 
     torch.save(model.state_dict(), "model.pth")
     print("Model saved to model.pth")
+
